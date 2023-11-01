@@ -5,6 +5,7 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <title>my card - tailwind</title>
     <style>
       @tailwind base;
@@ -12,13 +13,31 @@
       @tailwind utilities;
     </style>
   </head>
-  <body class="bg-neutral-800">
-    <div class="flex-col bg-amber-100 w-80 h-16">
-<div class="flex flex-row justify-between"> 
-  <span>icon</span>
-  <span>free</span>
-</div>
-  </div>
-
+  <body class="bg-neutral-400 flex flex-row justify-center">
+    <div class="bg-white p-4 flex flex-col w-[233px] rounded-2xl space-y-4">
+      <div class="flex flex-row justify-between items-center">
+       <span>
+        <iconify-icon icon="mdi:youtube" style="color: red; font-size: 32px;"></iconify-icon></span>
+       <div class="rounded-full bg-green-500 px-4 py-1 flex flex-col justify-center">
+         <span class="text-xs text-white font-semibold leading-0">
+          Free
+        </span>
+      </div>
+     </div>
+     <div class="flex flex-col">
+      <span>Videos</span>
+      <span>YouTube</span>
+     </div>
+     <div class="flex flex-row justify-between">
+      <div>Rating 5.0</div>
+      <div>Size 95.5mb</div>
+      <div>Downloads 8.5m</div>
+      </div>
+      <div class="flex flex-row justify-start">
+        <span>icon</span>
+        <span>30 Mb/Sec</span>
+      </div>
+    </div>
   </body>
 </html>
+ 
